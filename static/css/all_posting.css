@@ -1,0 +1,455 @@
+          /* ------------- responsive for only navbar ------------- */
+@media only screen and (max-width: 768px){
+    .logo-area img {
+        width: 90px;
+        padding: 12px 0;
+        margin-top: 8px;
+    }
+    .menu-area ul li a {
+        font-size: 15px;
+        padding: 2px 8px;
+    }
+}
+
+
+
+/* ------------ navbar-end-here ------------ */
+
+@media only screen and (max-width: 768px){
+    /* nav bar start */
+    .logo-area img {
+        width: 90px;
+        padding: 12px 0;
+        margin-top: 8px;
+    }
+    .menu-area ul li a {
+        font-size: 15px;
+        padding: 2px 8px;
+    }
+    /* navbar */
+    .row .right-section p {
+        font-size: 1rem;
+    }
+    .row .left-section p {
+        font-size: 1rem;
+    }
+    .row .left-section h4 {
+        font-size: 1rem;
+    }
+    .row .left-section form label {
+        font-size: 1rem;
+    }
+    .row .right-section h2 {
+        font-size: 1.3rem;
+    }
+    .row .left-section form input[type="checkbox"] {
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+    .row .right-section img {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .row .right-section .page-next .next ul {
+        display: block;
+    }
+    .row .right-section .page-next .next ul li {
+        padding: 1rem 0rem;
+    }
+    footer ul {
+        font-size: .9rem;
+    }
+    .row .right-section .page-next .page ul {
+        display: block;
+
+    }
+    .row .right-section .page-next .page ul li {
+        padding: .2rem 0;
+    }
+}
+@media only screen and (max-width: 720px){
+    .row .right-section ol li a {
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .row {
+        display: block;
+
+    }
+    .row .left-section {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .row .left-section .itemm {
+        width: 106%;
+        padding: 0;
+    }
+    .row .left-section form label {
+        font-size: .6rem;
+        padding: .3rem 0;
+    }
+    .row .left-section h4 {
+        font-size: .6rem;
+    }
+    .row .left-section {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        text-align: center;
+    }
+    .resss {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .row .left-section p {
+        display: none;
+    }
+    .row .left-section {
+        margin-top: -3rem;
+    }
+    .row .right-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .row .right-section p {
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-width: 376px){
+    /* navbar start */
+    .menu-area ul li a {
+        font-size: 13px;
+        padding: 2px 2px;
+    }
+    .logo-area img {
+        width: 71px;
+        padding: 11px 0;
+        margin-top: 8px;
+    }
+    .logo-area {
+        width: 29% !important;
+    }
+    .menu-area {
+        width: 71% !important;
+    }
+}
+
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F2F2;
+    font-size: 62.5%;
+}
+.resss{
+    display: none;
+}
+.row{
+    width: 90%;
+    margin: 0  auto;
+    display: flex;
+    margin-top: 3rem;
+
+}
+/* ------------ navbar-start-here ------------ */
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.navbar-area{
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.logo-area{
+    width: 35%;
+    float: left;
+    overflow: hidden;
+}
+.menu-area{
+    width: 65%;
+    float: left;
+    overflow: hidden;
+}
+
+
+.logo-area img {
+    width: 130px;
+    padding: 18px 0;
+}
+
+.menu-area{
+
+}
+.menu-area ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    float: right;
+}
+.menu-area ul li{
+    display: inline-block;
+}
+.menu-area ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #242424;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    transition: .2s;
+}
+.menu-area ul li a:hover{
+    color: #0082EC;
+}
+/* navbar end */
+
+
+/* custom */
+.row .left-section{
+    width: 100%;
+
+}
+.row .left-section p{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+
+}
+.row .left-section h4{
+    font-size: 1.6rem;
+}
+.row .left-section form{
+    display: block;
+    padding: 1rem .5rem;
+}
+.row .left-section .itemm {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+	width: 100%;
+    padding: .6rem 0;
+}
+.row .left-section form label {
+	margin: 0.4rem;
+    font-size: 1.2rem;
+	display: inline-block;
+	text-align: center;
+	margin-top: 1px;
+	padding: 0;
+	width: 55%;
+}
+
+
+.row .left-section form input[type="checkbox"]{
+
+    width: 21px !important;
+    height: 21px !important;
+    border: none;
+
+
+    box-shadow: none;
+
+    text-align: center;
+
+}
+/* test */
+
+
+.row .left-section form input:checked{
+    width: 21px !important;
+    height: 21px !important;
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    box-shadow: none;
+
+    text-align: center;
+
+    background: #FF8149;
+}
+
+.row .left-section form  input[type='checkbox']:checked:after {
+    content: '✔';
+    color: rgb(235, 231, 231);
+}
+
+
+
+/* right */
+.row .right-section{
+    width: 100%;
+}
+
+.row .right-section .r-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.row .right-section .r-heading p{
+    color: gray;
+    margin-left: 0;
+}
+.row .right-section .r-heading .short-by{
+    display: flex;
+    justify-content: space-between;
+}
+.row .right-section .r-heading .short-by p{}
+.row .right-section .r-heading .short-by select{
+    background-color: transparent;
+    border: 0;
+    font-weight: 600;
+}
+.row .right-section .r-heading .short-by select option{
+    background-color: transparent;
+}
+
+.row .right-section .part-1{
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid #b9afb9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    padding: 2rem;
+}
+.row .right-section .logo-com{
+    display: flex;
+
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.row .right-section img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.row .right-section p{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+.row .right-section h2{
+    color: #3B3A40;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.row .right-section ol{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.row .right-section ol li{
+    margin: .6rem 0;
+    padding: 0 .6rem;
+}
+.row .right-section ol li i{
+    color: rgb(59, 56, 56);
+}
+.row .right-section ol li  a{
+    color: rgb(63, 58, 58);
+    text-decoration: none;
+    margin-left: .6rem;
+    font-size: 16px;
+}
+
+.row .right-section h4{
+    font-size: 1.4rem;
+    color: black;
+    margin: .6rem 0;
+}
+.row .right-section .part-1 ul{
+    padding: 0;
+    color: rgb(83, 79, 79);
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+.row .right-section ul li{}
+
+
+
+/* page next */
+.row .right-section .page-next {
+	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+}
+.row .right-section .page-next .page{}
+.row .right-section .page-next .page ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+.row .right-section .page-next .page ul li{
+    padding: 0rem 1rem;
+}
+.row .right-section .page-next .page ul li a{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+
+}
+.row .right-section .page-next .page ul li a:hover{
+    color: black;
+}
+
+.row .right-section .page-next .next{}
+.row .right-section .page-next .next ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.row .right-section .page-next .next ul li{
+    padding: 0rem 1rem;
+}
+.row .right-section .page-next .next ul li a{
+    text-decoration: none;
+    color: #FA6402;
+    display: inline-block;
+    padding-right: 1rem;
+}
+.row .right-section .page-next .next ul li a:hover{
+    color: black;
+}
+
+/* Fotter */
+footer{
+
+    width: 90%;
+    margin: 1rem auto;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	font-size: 1re;
+	font-size: 1.2rem;
+}
+footer ul li{
+    padding: 0 2rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: .4s;
+
+}
+footer ul li a:hover{
+    color: black;
+}

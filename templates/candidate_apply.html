@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+       <link rel="stylesheet" type="text/css" href="{% static 'css/candidate_apply.css' %}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+          crossorigin="anonymous">
+    <title>Candidate Apply</title>
+  </head>
+
+  <body>
+
+  <section class="vh-100 bg-image" style="background-image: url('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Apply for Job</h2>
+
+              <form method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input name="applicant_name" type="text" id="applicant_name" class="form-control form-control-lg" required/>
+                </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">Mobile Phone Number</label>
+                  <input name="mobile_number" type="text" id="mobile_number" class="form-control form-control-lg" required/>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">Current ctc</label>
+                  <input name="current_ctc" type="text" id="current_ctc" class="form-control form-control-lg" required/>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Resume</label>
+                  <input name="resume" type="file" id="resume" class="form-control form-control-lg" accept="image/*" required/>
+                </div>
+
+                   <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">About</label>
+                  <textarea name="about" id="about" class="form-control form-control-lg" rows="3" cols="20" required></textarea>
+
+                </div>
+                <div>
+
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center" id="submit">
+                  <button type="submit" id="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Apply</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    $("#submit").click(function () {
+        var applicant_name = $("#applicant_name").val();
+        var mobile_number = $("#mobile_number").val();
+        var current_ctc = $("#current_ctc").val();
+        var resume = $("#resume").val();
+        var about = $("#about").val();
+
+        if (applicant_name == '' || mobile_number == '' || current_ctc == '' || resume == '' || about == '') {
+
+            swal({
+                title: "Fields Empty!!",
+                text: "Please check the missing fields!!",
+                icon: "warning",
+                button: "Ok!",
+            });
+
+        } else {
+            swal({
+                title: "Successfully Applied!!",
+                icon: "success",
+                button: "yass!",
+
+            });
+        }
+    })
+
+</script>
+
+
+
+
+
+  </body>
+</html>

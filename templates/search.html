@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/result.css" />
+    <!-- responsive css -->
+          <link rel="stylesheet" type="text/css" href="{% static 'css/jobs_result.css' %}"/>
+      <style>
+
+          hr.style-six {
+padding: 0;
+border: none;
+height: 1px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+color: #333;
+text-align: center;
+}
+hr.style-six:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background: #fff url() no-repeat scroll center;
+background-size: 90px 90px;
+height: 50px;
+}
+
+
+          a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: lightgray;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.span{
+    font-size: 13px;
+}
+
+.button {
+    display: block;
+
+    color: #f2f2f2;
+    background-color: #ff8149;
+    text-decoration: none;
+    padding: 0.7rem 0;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 800;
+    border-radius: 35px;
+}
+
+        .button {
+        width: 200px;
+        margin: 1.1rem auto;
+        font-size: 1.2rem;
+    }
+      </style>
+
+
+    <title>Jobs Result</title>
+  </head>
+  <body>
+
+{% block content %}
+        <!----------------- navbar-start ---------------->
+        <div class="navbar-area">
+          <div class="container">
+              <div class="main-menu">
+                  <div class="logo-area">
+                      <a href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+                  </div>
+                  <div class="menu-area">
+                      <ul>
+
+                          <li><a href="{% url 'internship' %}">Internship</a></li>
+                          <li><a href="{% url 'full_time' %}">Full Time</a></li>
+                          <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--------------------- navbar-end --------------------->
+    <p class="resss">Filter Jobs</p>
+    <section>
+      <div class="row">
+        <!-- left section of filter -->
+        <div class="left-section">
+            <br><br><br><br><br><br>
+          <h4 style="font-weight: bold">Search Jobs</h4>
+
+
+          <!-- form -->
+          <div class="filter-1">
+
+            <form method="get" class="form-inline" action="{% url 'search' %}">
+
+    <input class="form-control mr-sm-2" type="text" placeholder="Search for Jobs" name="query" id="query" style="border: 1px solid #4CAF50; max-width: 150px">
+    <button class="btn btn-success" type="submit">Search</button>
+                <br><br>
+              <div class="itemm">
+              </div>
+              <div class="itemm">
+              </div>
+            </form>
+          </div>
+                <div>
+                    <img src="{% static 'images/pexels-photo-5598295 (2).jpeg' %}" height="300" width="170" style="border: 1px solid #4CAF50;  border-radius: 20px;
+  padding: 2px;"><br><br><br>
+                    <h5 style="padding-right: 90px; font-weight: bold">Here, You Can Find The Job That Suits You.</h5>
+                </div>
+
+        </div>
+
+
+        <!-- right part -->
+        <div class="right-section">
+
+          <div class="r-heading">
+            <p></p>
+            <div class="short-by">
+              <p>Sort by</p>
+              <select style="font-size: 11px" name="#" id="#">
+                <option value="#" selected style="font-size: 11px">Relevance</option>
+                <option value="#" style="font-size: 11px">Newst arrival</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- first option -->
+
+            {% for data in posts %}
+          <div class="part-1" style=" border-radius: 30px;">
+            <div class="logo-com">
+              <img src="{% static 'images/company_logo.jfif' %}" alt="#"/>
+              <p style="font-weight: bold">{{ data.company_name }}</p>
+
+            </div>
+<br>
+            <h4 style="font-weight: bold">&ensp;&ensp;{{data.job_title}}</h4>
+            <ol>
+              <li>
+                <i class="fas fa-search-location"></i>
+                  <a>{{ data.location }}</a>
+              </li>
+              <li><i class="far fa-clock"></i><a href="#">{{ data.job_type }}</a></li>
+            </ol>
+
+            <h4 style="font-weight: bold">Description</h4>
+            <ul>
+              <li style="font-size: 13px">{{ data.job_description }}</li><br>
+                <li><h5 class="fa fa-dollar" style="font-size: 13px">&nbsp;CTC = {{ data.ctc }}</h5></li><br>
+
+                            </ul>
+
+                            <h4 style="font-weight: bold">Skills</h4>
+                            <ul>
+              <li style="font-size: 13px">{{ data.skills }}</li>
+                                                            </ul>
+<br>
+                        <a class="button" href="{% url 'candidate_apply' %}">Apply for this Job</a>
+
+          </div><br><br>
+                <hr class="style-six">
+            {% endfor %}
+
+
+<br><br><br>
+        {% if posts.paginator.num_pages > 1 %}
+
+    {% if posts.has_previous %}
+
+        <a href="?page={{ posts.previous_page_number }}" class="previous">&laquo; Previous</a>&nbsp;&nbsp;&nbsp;
+
+    {% endif %}
+
+    <span class="span">Page {{ posts.number }} of {{ posts.paginator.num_pages }}</span>&nbsp;&nbsp;&nbsp;
+
+    {% if posts.has_next %}
+
+        <a href="?page={{ posts.next_page_number }}" class="next">Next &raquo;</a>
+
+    {% endif %}
+
+{% endif %}
+
+    <footer>
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Trust & Safety</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+{% endblock %}

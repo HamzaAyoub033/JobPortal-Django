@@ -1,0 +1,1252 @@
+@media only screen and (max-width: 1280px){
+    .profile-title h3 {
+        font-size: 20px !important;
+    }
+    .profile-content ul li {
+        padding-right: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .profile-title {
+        width: 100% !important;
+        float: none;
+        text-align: center;
+    }
+    .profile-title h3 {
+        font-size: 24px !important;
+    }
+    .profile-content {
+        width: 100% !important;
+    }
+    .profile-content ul{
+        text-align: center;
+    }
+    .profile-content ul li {
+        float: none !important;
+        display: inline !important;
+    }
+    .banner-content h1 {
+        font-size: 46px !important;
+        line-height: 65px !important;
+    }
+    .banner-content p {
+        font-size: 14px !important;
+    }
+    .banner-content {
+        width: 56% !important;
+    }
+    .banner-image {
+        width: 44% !important;
+    }
+    .banner-content {
+        padding: 40px 0 !important;
+    }
+    .jobs-title h2 {
+        font-size: 41px !important;
+        line-height: 60px !important;
+    }
+    .post-title a {
+        font-size: 17px !important;
+    }
+    .inter-title h2 {
+        font-size: 36px !important;
+    }
+    .discovering-title h2 {
+        font-size: 38px !important;
+    }
+    .footer-widget ul li a {
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .post-title a {
+        font-size: 16px !important;
+    }
+    .post-location span {
+        font-size: 12px !important;
+        margin-right: 10px !important;
+        padding-left: 20px !important;
+    }
+    .post-logo-name img {
+        width: 22px !important;
+        margin-right: 4px !important;
+    }
+    .post-logo-name h5 {
+        margin: 0px !important;
+    }
+    .post-logo-name span {
+        font-size: 12px !important;
+    }
+    .single-post {
+        padding: 19px !important;
+    }
+    .discovering-title h2 {
+        font-size: 31px !important;
+    }
+    .discovering-section {
+        padding: 27px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .banner-content h1 {
+        font-size: 30px !important;
+        line-height: 46px !important;
+    }
+    .banner-content p {
+        font-size: 11px !important;
+        line-height: 19px !important;
+    }
+    .banner-content {
+        padding: 17px 0 !important;
+    }
+    .profile-area {
+        padding: 22px 0 !important;
+    }
+    .profile-title h3 {
+        font-size: 24px !important;
+    }
+    .brand-section .brand-title h3 {
+        font-size: 24px !important;
+    }
+    .brand-border {
+        margin: 29px 0 !important;
+    }
+    .jobs-section {
+        padding-top: 0 !important;
+    }
+    .jobs-post-card-area {
+        padding: 32px 0 !important;
+    }
+    .post-title a {
+        font-size: 13px !important;
+        line-height: 23px !important;
+    }
+    .post-logo-name img {
+        width: 17px !important;
+    }
+    .post-location span img {
+        width: 12px !important;
+    }
+    .post-location span {
+        font-size: 11px !important;
+        margin-right: 7px !important;
+        padding-left: 16px !important;
+    }
+    .single-post {
+        min-height: 215px !important;
+    }
+
+    .jobs-title h2 {
+        font-size: 27px !important;
+        line-height: 41px !important;
+    }
+    .inter-title h2 {
+        font-size: 28px !important;
+    }
+    .internships-area {
+        padding-top: 6px !important;
+    }
+    .discovering-title h2 {
+        font-size: 22px !important;
+        line-height: 44px !important;
+    }
+    .discovering-search input {
+        padding-right: 0 !important;
+        margin-top: 35px !important;
+    }
+    .discovering-search i {
+        right: 231px !important;
+        top: 50px !important;
+    }
+    .profile-content ul li a {
+        font-size: 16px !important;
+        margin-top: 15px !important;
+        margin-right: 14px !important;
+        margin-left: 14px !important;
+        line-height: 30px !important;
+    }
+    .profile-content ul li a span {
+        height: 30px !important;
+        width: 30px !important;
+    }
+    .profile-content ul li a span::before {
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+}
+
+@media only screen and (max-width: 680px){
+    .profile-content ul li {
+        float: left !important;
+    }
+    .single-post {
+        width: 100% !important;
+        padding: 37px !important;
+        margin-bottom: 25px !important;
+    }
+    .post-logo-name h5 {
+        font-size: 16px !important;
+        margin: 0px !important;
+    }
+    .post-logo-name span {
+        font-size: 14px !important;
+    }
+
+    .post-logo-name img {
+        width: 23px !important;
+        margin-right: 11px !important;
+    }
+    .post-title a {
+        font-size: 19px !important;
+        line-height: 29px !important;
+        padding: 35px 0 !important;
+    }
+    .post-location span {
+        font-size: 14px !important;
+        font-size: 14px !important;
+        padding-left: 20px !important;
+    }
+    .post-location span img {
+        width: 14px !important;
+    }
+    .discovering-title {
+        width: 100% !important;
+    }
+    .discovering-title h2 {
+        font-size: 26px !important;
+    }
+    .discovering-search input {
+        float: none !important;
+    }
+    .discovering-search i {
+        position: absolute;
+        right: 165px !important;
+        top: 55px !important;
+    }
+}
+@media only screen and (max-width: 414px){
+    .footer-menu {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        display: none;
+    }
+    .social-icon {
+        width: 50% !important;
+    }
+    .footer-bottom-menu ul {
+        display: none;
+    }
+    .footer-language {
+        width: 50%;
+    }
+    .discovering-search {
+        width: 59%;
+    }
+    .footer-section {
+        padding-top: 0;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Manrope', sans-serif; */
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.inner-container{
+    width: 92%;
+    margin: auto;
+}
+
+.hero-section{
+    background-image: linear-gradient(to right, #0082EC , #AADBEA);
+    overflow: hidden;
+
+}
+
+/* ------------ navbar-start-here ------------ */
+.navbar-area{
+    overflow: hidden;
+}
+.logo-area{
+    width: 20%;
+    float: left;
+    overflow: hidden;
+}
+.menu-area{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.register-area{
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+
+.logo-area img {
+    width: 130px;
+    padding: 18px 0;
+}
+
+.menu-area{
+    position: relative;
+}
+.menu-area::after{
+    content: '';
+    height: 1px;
+    width: 240px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    transform: translate(-50%);
+
+}
+.menu-area ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu-area ul li{
+    display: inline-block;
+}
+.menu-area ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    transition: .2s;
+}
+.menu-area ul li a:hover{
+    color: #000;
+}
+
+.register-area{
+
+}
+.register-area ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.register-area ul li{
+    display: inline-block;
+}
+.register-area ul li a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 22px;
+    margin: 20px 0;
+    border: 2px solid #fff;
+    transition: .2s;
+}
+.register-area ul li a:hover{
+    color: #000;
+    border: 2px solid #000 ;
+
+}
+.register-area ul li:last-child a{
+    background: #fff;
+    color: #000;
+    margin-left: 20px;
+    padding: 10px 26px;
+    border: 2px solid #fff;
+    transition: .2s;
+
+}
+.register-area ul li:last-child a:hover{
+    background: rgb(243, 239, 239);
+    border: 2px solid #000 ;
+}
+
+/* ------------- responsive for only navbar ------------- */
+@media only screen and (max-width: 948px){
+    .logo-area {
+        width: 16%;
+    }
+    .register-area {
+        width: 34%;
+    }
+    .logo-area img {
+        width: 120px;
+        margin-top: 6px;
+    }
+}
+@media only screen and (max-width: 828px){
+    .logo-area img{
+        width: 100%;
+    }
+    .menu-area {
+        width: 45%;
+    }
+    .register-area {
+        width: 39%;
+    }
+    .menu-area ul li a {
+        font-size: 16px;
+        padding: 5px 20px;
+        margin: 15px 0;
+    }
+    .logo-area img{
+        margin-top: 0;
+    }
+    .register-area ul li a {
+        font-size: 15px;
+        padding: 10px 18px;
+        margin: 15px 0;
+    }
+    .register-area ul li a {
+        font-size: 15px;
+        padding: 7px 18px;
+        margin: 10px 0;
+    }
+    .register-area ul li:last-child a {
+        background: #fff;
+        color: #000;
+        margin-left: 10px;
+        padding: 8px 15px;
+    }
+}
+@media only screen and (max-width: 645px){
+    .logo-area {
+        width: 100%;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    .logo-area img{
+        width: 100px;
+    }
+    .menu-area {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .menu-area::after{
+        display: none;
+    }
+    .register-area {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .menu-area ul {
+        text-align: left;
+    }
+    .menu-area ul li a {
+        font-size: 14px;
+        padding: 3px 10px;
+        margin: 4px 0;
+    }
+    .register-area ul li a {
+        font-size: 13px;
+        padding: 3px 10px;
+        margin: 1px 0;
+    }
+    .register-area ul li:last-child a {
+        background: #fff;
+        color: #000;
+        margin-left: 12px;
+        padding: 3px 10px;
+    }
+}
+@media only screen and (max-width: 645px){
+
+    .logo-area img {
+        width: 90px;
+    }
+    .menu-area {
+        width: 55%;
+    }
+    .register-area {
+        width: 45%;
+    }
+    .menu-area ul li a {
+        font-size: 12px;
+        padding: 3px 7px;
+        margin: 4px 0;
+    }
+    .register-area ul li a {
+        font-size: 12px;
+        padding: 2px 7px;
+        margin: 1px 0;
+    }
+    .register-area ul li:last-child a {
+        background: #fff;
+        color: #000;
+        margin-left: 5px;
+        padding: 2px 7px;
+    }
+}
+/* ------------ navbar-end-here ------------ */
+
+
+/* ----------- banner-section-start-here ---------- */
+.banner-section{
+}
+
+.banner-content{
+    width: 52%;
+    float: left;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.banner-image{
+    width: 48%;
+    float: right;
+    position: relative;
+}
+.hero-section{
+}
+.banner-image img{
+    position: absolute;
+    top: -20px;
+    right: -100px;
+    z-index: 0;
+}
+
+.banner-content h1{
+    font-size: 64px;
+    font-family: 'Manrope', sans-serif;
+    color: #fff;
+    line-height: 82px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.banner-content p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+/*---------- profile-section-start-here ---------- */
+.profile-section{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.profile-area{
+    overflow: hidden;
+    padding: 50px 0;
+}
+.profile-title{
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+
+.profile-title h3{
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    color: #8E8C95;
+    line-height: 33px;
+    font-weight: 600;
+
+}
+.profile-content{
+    width: 70%;
+    overflow: hidden;
+}
+
+.profile-content{
+
+}
+.profile-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.profile-content ul li{
+    float: left;
+    position: relative;
+    padding-right: 50px;
+}
+.profile-content ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 37px;
+}
+
+.profile-content ul li a span{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    color: #FA6402;
+    text-align: center;
+    position: relative;
+    margin-right: 6px;
+}
+.profile-content ul li a span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 36px;
+    width: 36px;
+    background: #F2F2F2;
+    z-index: -1;
+}
+
+.profile-content ul li a i{
+    font-size: 18px;
+    color: #B3B1B7;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+}
+
+.profile-section hr{
+    width: 82%;
+    float: right;
+    border-bottom: 0;
+    border-top: 1px solid #E8E7E8;
+}
+/*----------- profile-section-end-here ----------- */
+
+
+
+
+/*---------- brand-section-start-here ---------- */
+.brand-section{
+
+}
+.brand-area-1{
+
+}
+.brand-section .brand-title h3{
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.brand-border{
+    border: 1px solid #E7E7E7;
+    margin: 50px 0;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.owl-theme .item{
+    text-align: center;
+    margin-top: 15px;
+}
+.owl-next{
+	position: absolute;
+	right: -51px;
+	top: 50%;
+    transform: translateY(-50%);
+}
+.owl-theme .item a {
+    display: inline-block;
+}
+.owl-theme .item a img{
+    width: 100%;
+}
+.owl-prev{
+    position: absolute;
+	left: -51px;
+	top: 50%;
+    transform: translateY(-50%);
+}
+.owl-next span,
+.owl-prev span{
+    font-size: 21px;
+}
+.owl-theme .owl-nav [class*="owl-"]{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff !important;
+    color: #000;
+    border: 2px solid #E8E7E8 !important;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    color: #000;
+}
+
+/* ------------brand-section-end-here ------------  */
+
+
+/* ------- jobs-section-start-here ----- */
+.jobs-section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.jobs-title-area{
+    overflow: hidden;
+}
+.jobs-title{
+    overflow: hidden;
+}
+.jobs-title h2{
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 0;
+}
+.jobs-category{
+    float: right;
+    overflow: hidden;
+}
+.jobs-category span{
+    font-size: 17px;
+    color: #8E8C95;
+    font-weight: normal;
+}
+.jobs-category select{
+    background: transparent;
+    border: 1.5px solid #ddd;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    padding: 2px 3px;
+}
+
+/*------ jobs-post-card-area -------- */
+
+.jobs-post-card-area{
+    padding: 60px 0;
+}
+.single-post{
+    border: 1px solid #E8E7E8;
+    background: #F9F9F9;
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    min-height: 240px;
+    position: relative;
+    transition: .2s;
+}
+.single-post:hover .post-title a{
+    color: #0082ec;
+}
+
+.single-post:hover{
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.20);
+}
+
+.single-post:nth-child(3),
+.single-post:nth-child(6),
+.single-post:nth-child(9),
+.single-post:nth-child(12),
+.single-post:nth-child(15),
+.single-post:nth-child(18),
+.single-post:nth-child(21),
+.single-post:nth-child(24),
+.single-post:nth-child(27),
+.single-post:nth-child(30){
+    margin-right: 0;
+}
+
+.post-logo-name{
+    overflow: hidden;
+}
+.post-logo-name img{
+    width: 28px;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.post-logo-name h5{
+    float: left;
+    overflow: hidden;
+    font-size: 14;
+    font-weight: 600;
+    color: #3B3A40;
+    font-family: 'Manrope', sans-serif;
+    margin: 4px;
+}
+.post-logo-name span{
+    float: right;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B3B1B7;
+    font-weight: normal;
+}
+
+.post-title{
+    overflow: hidden;
+}
+.post-title a{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 20px 0;
+    display: inline-block;
+    color: #3B3A40;
+    text-decoration: none;
+}
+
+.post-location{
+    overflow: hidden;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 16px;
+}
+.post-location span{
+    font-size: 14px;
+    color: #64626A;
+    font-weight: 500;
+    margin-right: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+.post-location span img{
+    width: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.post-location span:nth-child(2) img{
+    top: 1px;
+}
+
+/*------------ internships-area -------------- */
+.internships-area{
+    background: linear-gradient(180deg, #F8F8FA 65.25%, #F6F8F9 78.83%, #F2F8F7 100%);
+    overflow: hidden;
+    padding-top: 40px;
+}
+.inter-title h2{
+    font-size: 40px !important;
+}
+.internship-mt{
+    padding-top: 0 !important
+}
+.internship-bg{
+    background: #fff !important;
+
+}
+.jobs-category-a{
+    float: right;
+    margin-top: -30px
+}
+.jobs-category-a a{
+    font-size: 17px;
+    color: #8a8795;
+    font-weight: normal;
+    text-decoration: none;
+}
+.jobs-category-a a:hover{
+    color: #747083;
+}
+
+/*------- intership-slider -------- */
+
+.internship-slider-area{
+    background: linear-gradient(180deg, #F8F8FA 65.25%, #F6F8F9 78.83%, #F2F8F7 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.slider-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mySlides {
+    display: none;
+  }
+  img {
+    vertical-align: middle;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1%;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #fff;
+    color: black;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    top: 26%;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+
+  /* Caption text */
+  .text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 51%;
+    text-align: left;
+    background-color: #fff;
+    left: 3rem;
+    bottom: -1rem;
+  }
+  .text img {
+    width: 15%;
+    margin-left: 3%;
+  }
+  .text p {
+    font-size: 85%;
+    box-sizing: border-box;
+  }
+  .text h5 {
+    display: inline;
+  }
+  .text h6 {
+    display: inline;
+    color: #808080;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  /* slider above write */
+  .for-write {
+    position: relative;
+  }
+  .write {
+    position: relative;
+    top: -6rem;
+    left: 15%;
+    width: 14rem;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px;
+    }
+  }
+
+
+
+
+
+/* ---------discovering-section -------- */
+.discovering-section{
+    overflow: hidden;
+    padding: 56px 0;
+
+}
+.discovering-title{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.discovering-title h2{
+    font-size: 48px;
+    line-height: 68px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+.discovering-title h2 a{
+    width: 20px;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    padding: 10px;
+}
+
+.discovering-title h2 a::before{
+    content: '';
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    z-index: -1;
+    transition: .2s;
+}
+.discovering-title h2 a:hover::before{
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.25);
+}
+
+.discovering-search{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+}
+.discovering-search input{
+    float: right;
+    background: #FF8149;
+    color: #fff;
+    border: 2px solid #FF8149;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 50px;
+    font-size: 18px;
+    margin-top: 80px;
+}
+input:focus-visible {
+	outline: none;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.20);
+}
+
+::-webkit-input-placeholder{
+    color: #fff !important;
+}
+.discovering-search i{
+    position: absolute;
+    right: 244px;
+    top: 100px;
+    color: #fff;
+    font-size: 18px;
+}
+/*--------- discovering-section-end-here ------- */
+
+
+/*-------- footer-section -------- */
+
+.footer-section{
+    background: #F7F7F7;
+    overflow: hidden;
+    padding-top: 70px;
+}
+.footer-menu{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.footer-widget{
+    width: 19.2%;
+    float: left;
+    overflow: hidden;
+    margin-right: 1%;
+}
+.footer-widget:last-child{
+    margin-right: 0;
+}
+.footer-widget h4{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3B3A40;
+    font-family: 'Manrope', sans-serif;
+}
+.footer-widget ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-widget ul li a{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    display: inline-block;
+    padding: 3px 0;
+    color: #64626A;
+    text-decoration: none;
+    transition: .2s;
+}
+.footer-widget li a:hover{
+
+    color: #000;
+    letter-spacing: .8px;
+}
+
+.footer-section hr{
+    border-top: 1px solid #E8E7E8;
+    border-bottom: 0;
+    margin-top: 50px;
+}
+
+/*----- footer-bottom ----- */
+.footer-bottom{
+    padding-top:  18px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+}
+.social-icon{
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+.social-icon ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icon ul li{
+    float: left;
+    margin-right: 15px;
+}
+.social-icon ul li a{
+    display: inline-block;
+    font-size: 14px;
+    height: 14px;
+    width: 14px;
+    background: #55ACEE;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.social-icon ul li:nth-child(2) a{
+    background: #3B5998;
+}
+.social-icon ul li:nth-child(3) a{
+    background: #0976B4;
+}
+
+.footer-bottom-menu{
+    width: 55%;
+    float: left;
+    overflow: hidden;
+}
+.footer-bottom-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-bottom-menu ul li{
+    float: left;
+    margin-right: 30px;
+}
+.footer-bottom-menu ul li a{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #64626A;
+    text-decoration: none;
+    display: inline-block;
+}
+.footer-bottom-menu ul li a:hover{
+    text-decoration: underline;
+}
+.footer-language{
+    width: 20%;
+    overflow: hidden;
+    text-align: right;
+}
+.footer-language span{
+    font-size: 13px;
+    color: #64626A;
+    font-weight: normal;
+}
+.footer-language select{
+    background: transparent;
+    border: 1.5px solid #ddd;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    padding: 2px 3px;
+}

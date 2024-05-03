@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+       <link rel="stylesheet" type="text/css" href="{% static 'css/recruiter_posting.css' %}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+          crossorigin="anonymous">
+    <title>Recruiter Posting</title>
+  </head>
+  <body>
+  <section class="vh-100 bg-image" style="background-image: url('https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Post a Job</h2>
+
+              <form method="post" enctype="multipart/form-data">
+                  {% csrf_token %}
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Job Title</label>
+                  <input name="job_title" type="text" id="job_title" class="form-control form-control-lg" required/>
+                </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">Job Description</label>
+                  <textarea name="job_description" id="job_description" class="form-control form-control-lg" rows="2" cols="10" required></textarea>
+                </div>
+
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">Skills</label>
+                  <input name="skills" type="text" id="skills" class="form-control form-control-lg" required/>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Company Name</label>
+                  <input name="company_name" type="text" id="company_name" class="form-control form-control-lg" required/>
+                </div>
+
+                   <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">CTC</label>
+                  <input name="ctc" id="ctc" class="form-control form-control-lg"  required>
+                </div>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Location</label>
+                  <input name="location" type="text" id="location" class="form-control form-control-lg" required/>
+                </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Job Type</label>
+                  <select name="job_type" id="job_type" class="form-control form-control-lg" required>
+                          <option value="Full time">Full time</option>
+                      <option value="Internship">Internship</option>
+
+                      </select>
+                </div>
+
+                <div>
+
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center" id="submit">
+                  <button type="submit" id="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Post</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $("#submit").click(function () {
+        var job_title = $("#job_title").val();
+        var job_description = $("#job_description").val();
+        var skills = $("#skills").val();
+        var company_name = $("#company_name").val();
+        var ctc = $("#ctc").val();
+        var location = $("#location").val();
+        var job_type = $("#job_type").val();
+
+        if (job_title == '' || job_description == '' || skills == '' || company_name == '' || ctc == '' || location == '' || job_type == '') {
+
+            swal({
+                title: "Fields Empty!!",
+                text: "Please check the missing fields!!",
+                icon: "warning",
+                button: "Ok!",
+            });
+
+        } else {
+            swal({
+                title: "Successfully Posted!!",
+                icon: "success",
+                button: "yass!",
+
+            });
+        }
+    })
+
+</script>
+
+
+
+  </body>
+</html>
+
+
+
+

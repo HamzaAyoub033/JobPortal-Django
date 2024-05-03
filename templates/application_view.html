@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link rel="stylesheet" type="text/css" href="{% static 'css/application_view.css' %}"/>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>View Application</title>
+
+      <style>
+
+          /* Images between <hr> tag */
+
+hr.style-six {
+padding: 0;
+border: none;
+height: 1px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+color: #333;
+text-align: center;
+}
+hr.style-six:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background: #fff url() no-repeat scroll center;
+background-size: 90px 90px;
+height: 50px;
+}
+
+
+          .myy{
+              max-width: 95%;
+              padding-left: 100px;
+          }
+
+          body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+                    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+.previous {
+  background-color: lightgray;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.span{
+    font-size: 13px;
+}
+
+.button {
+    display: block;
+
+    color: #f2f2f2;
+    background-color: #ff8149;
+    text-decoration: none;
+    padding: 0.7rem 0;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 800;
+    border-radius: 35px;
+}
+
+        .button {
+        width: 200px;
+        margin: 1.1rem auto;
+        font-size: 1.2rem;
+    }
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.section{
+      margin: 70px;
+  border: 1px solid #4CAF50;
+    border-radius: 10px;
+}
+      </style>
+
+
+
+
+  </head>
+  <body>
+     <!----------------- navbar-start ---------------->
+     <div class="navbar-area">
+      <div class="container">
+          <div class="main-menu">
+              <div class="logo-area">
+                  <a href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+              </div>
+              <div class="menu-area">
+                  <ul>
+                      <li><a href="#"></a></li>
+                      <button type="button" class="btn btn-primary">
+                       <a style="text-decoration: none; color:#fff;" href="{% url 'recruiter_posting' %}">Post a job</a>
+                        </button>
+                      <li><a style="font-weight: bold" href="{% url 'all_posting' %}">My Jobs</a></li>
+                      <li><a style="font-weight: bold" href="{% url 'contact' %}">Contact Us</a></li>
+                      <li><a style="font-weight: bold" href="{% url 'logout' %}">LOGOUT</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--------------------- navbar-end --------------------->
+              {% for data in post %}
+<div class="myy">
+    <section class="section">
+                <ol>
+
+                </ol>
+                      <section>
+
+                          <div class="main">
+        <div class="left">
+          <div class="upper">
+            <div class="row1">
+                     <br>
+
+                <p style="font-weight: bold; color:black;">This is Application is related to job: <i><span style="color:orange;">{{ data.apply }}</span></i></p>
+              <p></p>
+            </div>
+              <br>
+                     <br>
+
+
+            <div class="row2">
+                <h1 style="font-weight: bold">{{ data.cand }}</h1>
+              <ul>
+                <li>
+                  <h5 style="font-weight: bold"><i class="fa fa-phone"></i>&nbsp;Mobile Number</h5>
+                  <h6>{{ data.cand.phone }}</h6>
+                </li>
+                <li>
+                  <h5 style="font-weight: bold"><i class="fa fa-dollar"></i>&nbsp;Current CTC</h5>
+                  <h6>{{data.cand.ctc}}</h6>
+                </li>
+<li>
+                  <h5 style="font-weight: bold"><i class="fa fa-envelope"></i>&nbsp;Email</h5>
+                  <h6>{{ data.cand.user.email }}</h6>
+                </li>
+
+              </ul>
+            </div>
+                  <div class="row2">
+              <ul>
+                <li>
+                  <h5 style="font-weight: bold"><i class=""></i>&nbsp;Skills</h5>
+
+                  <h6>{{ data.Skill }}</h6>
+                </li>
+
+                <li>
+                  <h5 style="font-weight: bold"><i class=""></i>&nbsp;Experience</h5>
+                  <h6>{{ data.cand.Experience }}</h6>
+                </li>
+<li>
+                  <h5 style="font-weight: bold"><i class="fa fa-university"></i>Institute</h5>
+                  <h6>{{ data.cand.institute_name }}</h6>
+                </li>
+              </ul>
+            </div>
+            <div class="row3">
+              <h5>ABOUT</h5>
+              <p>
+                {{ data.cand.about }}
+              </p>
+            </div>
+          </div>
+
+                      <!-- more application -->
+
+     <div class="new">
+          <div class="more">
+            <div class="row5">
+
+            </div>
+            <!-- page next section -->
+            <div class="page-next">
+              <div class="page">
+              </div>
+            </div>
+          </div>
+        </div>
+             </div>
+
+                    <div class="right">
+                             <br>
+          <div class="right-row1">
+              {% if data.status == 'pending' %}
+            <a class="share" href="/cand_status/{{ data.id }}"><i class="fas fa-check"></i> Accept</a>
+              <a class="rej" href="/cand_reject/{{ data.id }}"><i class="fas fa-ban"></i> Reject</a>
+              {% else %}
+              <a class="" style="background-color:green;color:#fff;text-decoration:none;margin-left:70px;" href="#"><i class="fas fa-check"></i> Accepted</a>
+              {% endif %}
+
+
+          </div>
+
+          <div class="resume">
+<!--            <h3>Resume of Applicant</h3>-->
+
+
+<p><img src="{{data.cand.profile_pic.url}}" style="height: 300px; width:240px;"></p>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+</div>
+              </section>
+                   <hr class="style-six">
+
+            </div>
+
+                  </div>
+        {% endfor %}
+<br>
+<div style="text-align: center;">
+             {% if post.paginator.num_pages > 1 %}
+
+    {% if post.has_previous %}
+
+        <a href="?page={{ post.previous_page_number }}" class="previous">&laquo; Previous</a>&nbsp;&nbsp;&nbsp;
+
+    {% endif %}
+
+    <span class="span">Page {{ post.number }} of {{ post.paginator.num_pages }}</span>&nbsp;&nbsp;&nbsp;
+
+    {% if post.has_next %}
+
+        <a href="?page={{ post.next_page_number }}" class="next">Next &raquo;</a>
+
+    {% endif %}
+
+{% endif %}
+</div>
+
+<br><br>
+
+
+  </body>
+
+</html>
+{% endblock %}

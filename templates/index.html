@@ -1,0 +1,623 @@
+{#<h1>Welcome</h1>#}
+{##}
+{#{% if user.is_authenticated%}#}
+{#<a href="{% url 'logout' %}">Logout</a> <br>#}
+{#{% else %}#}
+{#<a href="{% url 'register' %}">Register</a> <br>#}
+{#<a href="{% url 'login' %}">Login</a> #}
+{#{% endif %}#}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- resoponsive csss -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightskyblue;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+
+</head>
+<body>
+    <div class="hero-section">
+        <!----------------- navbar-start ---------------->
+        <div class="navbar-area">
+            <div class="container">
+                <div class="main-menu">
+                    <div class="logo-area">
+                        <a href="#"><img src="{% static 'images/logoo.png' %}" alt="Logo"></a>
+                    </div>
+                    <div class="menu-area">
+                        <ul>
+                            <li><a href="#">Internship</a></li>
+                            <li><a href="#">Fresher Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="register-area">
+                        <ul>
+                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                             {% if user.is_superuser %}
+                            <li><a href="/admin">Admin</a></li>
+                              {% elif user.is_candidate  %}
+                            <li><a href="/profile">Profile</a></li>
+                              {% elif user.is_recruiter  %}
+                            <li><a href="/recruiterprofile">Profile</a></li>
+                              {% else %}
+                             <li><a href="{% url 'login' %}">Sign In</a></li>
+                            <div class="dropdown">
+                            <button class="dropbtn">Registeration</button>
+                            <div class="dropdown-content">
+                            <a href="{% url 'candidate_register' %}">As Candidate</a>
+                                <a href="{% url 'recruiter_register' %}">As Recruiter</a>
+                                        </div>
+                                        </div>
+                            {% endif %}
+                        </ul>
+
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--------------------- navbar-ent --------------------->
+        <div class="container">
+            <div class="inner-container">
+                <div class="banner-section">
+                    <div class="banner-content">
+                        <h1>Find the Job <br>
+                            that Fits Your Life</h1>
+                        <p>Millions of people are searching for jobs, salary information, company reviews, and interview questions. See what others are looking for on Oval today.</p>
+                    </div>
+                    <div class="banner-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- profile-section-start-here --------------->
+    <div class="profile-section">
+        <div class="container">
+            <div class="inner-container">
+                <div class="profile-area">
+                    <div class="profile-title">
+                        <h3>How Oval Works for You</h3>
+                    </div>
+                    <div class="profile-content">
+                        <ul>
+                            <li><a href="#"><span>1</span> Creat profile</a></li>
+                            <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i><span>2</span> Find job you love</a></li>
+                            <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i><span>3</span> Get hired</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--------------- profile-section-end-here --------------->
+
+
+    <!--------------- brand-section-start-here --------------->
+    <div class="brand-section">
+        <div class="container">
+            <div class="inner-container">
+                <div class="brand-area-1">
+                    <div class="brand-title">
+                        <h3>Top Medical Universities</h3>
+                    </div>
+                    <div class="brand-border">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><a><img src="{% static 'images/1.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/1.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/2.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/3.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/4.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/5.png' %}" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-area-2">
+                    <div class="brand-title">
+                        <h3>Top IT Universities</h3>
+                    </div>
+                    <div class="brand-border">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><a href="#"><img src="{% static 'images/1.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/2.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/3.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/4.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/5.png' %}" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="{% static 'images/1.png' %}" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------- brand-section-end-here --------------->
+
+    <!---------- jobs-section-start-here ---------->
+    <div class="jobs-section">
+        <div class="container">
+            <div class="inner-container">
+                <div class="jobs-title-area">
+                    <div class="jobs-title">
+                        <h2>New jobs daily <br>
+                            you might love</h2>
+                    </div>
+                    <div class="jobs-category">
+                        <span>Jobs Category :</span>
+                        <select name="" id="">
+                            <option value="">select</option>
+                            <option value="select">Internet & Technology</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="jobs-post-card-area">
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo.png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (1).png' %}" alt="">
+                            <h5>Mercedes-Benz</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Head of Third Party Strategy and Deals, Go-to-Market</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> Aurora, CO</span>
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (2).png' %}" alt="">
+                            <h5>Dropbox</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Marketing Associate Director - Consumer Experience</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> Lowell, MA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (2).png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Marketing Associate Director - Consumer Experience</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (3).png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">G Suite Specialist, Google Cloud Customer Engineering</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Rectangle 8.png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Brand Marketing Manager – Services Portfolio</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- jobs-section-end-here ---------->
+
+
+    <!----------- internships-section-start-here ----------->
+    <div class="internships-area">
+        <div class="container">
+            <div class="inner-container">
+                <div class="jobs-title-area">
+                    <div class="jobs-title inter-title">
+                        <h2>Internships</h2>
+                    </div>
+                    <div class="jobs-category-a">
+                        <a href="#">View all Jobs</a>
+                    </div>
+                </div>
+                <div class="jobs-post-card-area internship-mt">
+                    <div class="single-post internship-bg">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (2).png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post internship-bg">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Employer Logo (3).png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                    <div class="single-post internship-bg">
+                        <div class="post-logo-name">
+                            <img src="{% static 'images/Rectangle 8.png' %}" alt="">
+                            <h5>Adobe</h5>
+                            <span>3 days ago</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Sales Engineer, Application Modernization, Healthcare, Google Cloud</a>
+                        </div>
+                        <div class="post-location">
+                            <span><img src="{% static 'images/Shape.png' %}" alt=""> San Jose, CA</span>
+                            <span><img src="{% static 'images/Shape (1).png' %}" alt=""> Fulltime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------- internship-slider-area ---------->
+    <div class="internship-slider-area">
+        <div class="container">
+            <div class="inner-container">
+                <div class="slider-bg">
+                    <img src="{% static 'images/Group 36.png' %}" alt="">
+                </div>
+                <div class="slideshow-container for-write">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="{% static 'images/slider1.png' %}" style="width: 100%" />
+                      <div class="text">
+                        <img src="{% static 'images/inver.png' %}" alt="" />
+                        <p>
+                          Moving to a new place is scary, but using Oval to find a job within
+                          one week of moving in has been such a blessing to me and my family!
+                        </p>
+                        <h5>James Lyons,</h5>
+                        <h6>Finance</h6>
+                      </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="{% static 'images/slider2.jpg' %}" style="width: 100%" />
+                      <div class="text">
+                        <img src="{% static 'images/inver.png' %}" alt="" />
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit
+                          aperiam iusto ad iure itaque tempora nesciunt harum quo assumenda?
+                        </p>
+                        <h5>James Lyons,</h5>
+                        <h6>Finance</h6>
+                      </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="{% static 'images/slider3.jpg' %}" style="width: 100%" />
+                      <div class="text">
+                        <img src="{% static 'images/inver.png' %}" alt="" />
+                        <p>
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, ullam?
+                        </p>
+                        <h5>James Lyons,</h5>
+                        <h6>Finance</h6>
+                      </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+
+                  <!-- <div class="write">
+
+                  </div> -->
+
+                  <br />
+
+                  <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--------- discovering-section-start-here ----------->
+    <div class="discovering-section">
+        <div class="container">
+            <div class="inner-container">
+                <div class="discovering-content">
+                    <div class="discovering-title">
+                        <h2>You’re now discovering jobs from..... <a href="#"><img src="{% static 'images/Path.png' %}" alt="icon"></a></h2>
+                    </div>
+                    <div class="discovering-search">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Find Job Now">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- discovering-section-end-here ----------->
+
+
+
+    <!-------------- footer-section-start-here ----------->
+    <div class="footer-section">
+        <div class="container">
+            <div class="inner-container">
+                <div class="footer-menu">
+                    <div class="footer-widget">
+                        <h4>For Job Seekers</h4>
+                        <ul>
+                            <li><a href="#">Search Jobs</a></li>
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Salaries</a></li>
+                            <li><a href="#">Job Seeker Reviews</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Create Free Account</a></li>
+                            <li><a href="#">Job Seeker Support</a></li>
+                            <li><a href="#">Trust and Safety</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h4>For Employers</h4>
+                        <ul>
+                            <li><a href="#">Post a Job Now</a></li>
+                            <li><a href="#">How it Works</a></li>
+                            <li><a href="#">Job Sites</a></li>
+                            <li><a href="#">Oval Reviews</a></li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Search Resumes</a></li>
+                            <li><a href="#">New Account Help</a></li>
+                            <li><a href="#">Employer Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h4>Industry Solutions</h4>
+                        <ul>
+                            <li><a href="#">Accounting</a></li>
+                            <li><a href="#">Construction</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Technology</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h4>Partner with Us</h4>
+                        <ul>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Job Board API</a></li>
+                            <li><a href="#">Email Alert Program</a></li>
+                            <li><a href="#">Reseller Program</a></li>
+                            <li><a href="#">Job Board Software</a></li>
+                            <li><a href="#">ATS Integrations</a></li>
+                            <li><a href="#">Newspaper Partnerships</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Oval.org</a></li>
+                            <li><a href="#">Oval ID</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-menu">
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Trust & Safety</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-language">
+                        <span>Language :</span>
+                        <select name="" id="">
+                            <option value="select">EN</option>
+                            <option value="select">BN</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:50,
+            nav:true,
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                500:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                950:{
+                    items:4
+                },
+                1100:{
+                    items:5
+                }
+            }
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+</body>
+</html>
+{% endblock content %}
